@@ -1,0 +1,5 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=452
+
+This plugin allows you to draw rectangles and lines using blockwise Visual mode, which makes it ideal for drawing tables and such. Simply move the cursor to the start position, hit CTRL-V to enter blockwise Visual mode and move the cursor to define the rectangle or line. Finally, type <leader>d to draw the rectangle or line. If you don't know what <leader> is, \d should do the trick. This script supports UTF-8 as well as PC-8 boxdrawing characters, and checks the value of 'encoding' to determine which it should use. If you use a single byte character set other than ECS/PC-8 which includes boxdrawing characters, please notify me so I can add support for it.
+
+Note: I strongly recommend ":set virtualedit+=block" when using this script, so you can define rectangles beyond the end of the line.
